@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-    <div class=" bg-fixed  bg-center h-96 w-full" id="div">
+    <div class=" bg-fixed bg-right h-96 w-full" id="div">
         <h1 class=" pt-16 text-2xl w-1/2 font-semibold text-center text-white">Sharifi Online Shopping</h1>
     </div>
 </body>
