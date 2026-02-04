@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\ProductDetails;
+use App\Events\UserWarning;
 class ProductController extends Controller
 {
     //
@@ -36,7 +37,9 @@ class ProductController extends Controller
         $proDetails->img_url = $path;
         $proDetails->productId = $product->id;
         $proDetails->save();
+        event(new UserWarning());
         return redirect('/product');
+
 
     }
 }

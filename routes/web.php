@@ -31,4 +31,5 @@ Route::prefix('/products')->controller(ProductController::class)->group(function
     Route::post('insert','insert');
     Route::view('/add','product.add');
 });
+Broadcast::routes();
 require __DIR__.'/auth.php';

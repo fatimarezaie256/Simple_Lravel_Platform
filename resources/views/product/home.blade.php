@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial;
-            background: #f4f6f8;
+            background: black;
             margin: 0;
             padding: 20px;
         }
@@ -79,12 +79,15 @@
             font-size: 12px;
             margin-top: 8px;
         }
+        .h1{
+   color:white;
+        }
     </style>
 </head>
 <body>
 
-<h1>All Products</h1>
-<div style="box-shadow:2px 2px 2px 2px gray;height:150px;width:fit-content;padding:6px 10px;border-radius:4px;margin-right:0px;">
+<h1 class="h1">All Products</h1>
+<!-- <div style="box-shadow:2px 2px 2px 2px gray;height:150px;width:fit-content;padding:6px 10px;border-radius:4px;margin-right:0px;">
     <h2 style="font-size:20px;">Users Informations</h2>
     <h2>
         @if(Auth::user())
@@ -92,7 +95,7 @@
         <label for="" style="font-size:16px;">Email:{{Auth::user()->email}}</label>
         @endif
     </h2>
-</div>   
+</div>    -->
 <div class="product-container" style="">
     @foreach($products as $product)
         @foreach($product->product_details as $productDtl)
